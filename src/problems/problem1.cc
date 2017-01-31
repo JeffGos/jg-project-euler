@@ -15,7 +15,7 @@ void problem1BruteForce()
 		}
 	}
 
-	printf("Result = %d\n\n", result);
+	printf("Result = %d", result);
 }
 
 int getMultiples(int argument, int max)
@@ -46,6 +46,6 @@ void problem1Multiples()
 	result += getMultiples(5, max);
 	result -= getMultiples(15, max);
 
-	printf("Result = %d\n\n", result);	
+	printf("Result = %d", result);	
 }
 
