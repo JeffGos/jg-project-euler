@@ -6,20 +6,18 @@ using namespace std;
 
 int main ()
 {
-	clock_t start, end;
+	clock_t start;
 
 	printf("\nPROJECT EULER SOLUTIONS\n");
 
 	printf("===========================\n\n");
 	start = clock();
 	problem1BruteForce();
-	end = clock();
-	printf(" [duration = %lu ticks]\n\n", end - start);
+	printf(" [duration = %lu ticks]\n\n", clock() - start);
 
 	start = clock();
 	problem1Multiples();
-	end = clock();
-	printf(" [duration = %lu ticks]\n\n", end - start);
+	printf(" [duration = %lu ticks]\n\n", clock() - start);
 
 	printf("===========================\n\n");
 
