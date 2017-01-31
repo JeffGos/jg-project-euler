@@ -14,12 +14,12 @@ int main ()
 	start = clock();
 	problem1BruteForce();
 	end = clock();
-	printf(" [duration = %i ticks]\n\n", end - start);
+	printf(" [duration = %lu ticks]\n\n", end - start);
 
 	start = clock();
 	problem1Multiples();
 	end = clock();
-	printf(" [duration = %i ticks]\n\n", end - start);
+	printf(" [duration = %lu ticks]\n\n", end - start);
 
 	printf("===========================\n\n");
 
