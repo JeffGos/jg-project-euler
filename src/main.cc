@@ -5,7 +5,7 @@ using namespace std;
 
 int main ()
 {
-	std::cout << "\nPROJECT EULER SOLUTIONS\n";
+	printf("\nPROJECT EULER SOLUTIONS\n");
 
 	printf("===========================\n\n");
 	problem1BruteForce();
