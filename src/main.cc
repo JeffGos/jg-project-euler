@@ -39,7 +39,7 @@ int main () {
 
 	start = clock();
 	//generatePrimeSieveEratosthenes(600851475143);
-	generatePrimeSieveEratosthenes(600851475143);
+	generatePrimeSieveEratosthenes(1000000);
 	printDuration(start);
 
 	start = clock();
