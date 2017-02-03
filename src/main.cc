@@ -38,7 +38,6 @@ int main () {
 	printDuration(start);
 
 	start = clock();
-	//generatePrimeSieveEratosthenes(600851475143);
 	generatePrimeSieveEratosthenes(1000000);
 	printDuration(start);
 

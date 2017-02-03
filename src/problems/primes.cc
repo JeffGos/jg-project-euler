@@ -1,12 +1,9 @@
 #include "primes.h"
 #include <cmath>
 
-std::set<long>* generatePrimeSieveEratosthenes(long upperLimit) {
+void generatePrimeSieveEratosthenes(long upperLimit) {
 
-	printf("Generate Eratosthenes Prime Sieve. upperLimit = %ld\n", upperLimit);	
-
-	//std::set<long>* result = new std::set<long>();
-	//std::set<long>* nonPrimes = new std::set<long>();
+	printf("Generate Eratosthenes Prime Sieve. Limit = %ld\n", upperLimit);	
 
 	bool* isPrime = new bool[upperLimit];
 
@@ -17,27 +14,16 @@ std::set<long>* generatePrimeSieveEratosthenes(long upperLimit) {
 		isPrime[i] = true;
 	}
 
-	//for i = 2, 3, 4, ..., not exceeding √n
-	//for (long i = 2; i < upperLimit; i++) {
 	for (long i = 2; i < sqrt(upperLimit); i++) {
 
-		//if (nonPrimes->find(i) != nonPrimes->end()) {
 		if (!isPrime[i]) {
 			continue;
 		}
 
-		//eliminate i2, i2+i, i2+2i, i2+3i, ..., not exceeding upperLimit
-		//for (long j = i * 2; j < (upperLimit / i) + 1; j++) {
-
+		//eliminate multiples of i
 		for (long j = i * 2; j < upperLimit; j += i ) {
-			//printf("%ld, ", j);
-			//nonPrimes->insert(j);	
 			isPrime[j] = false;
 		}
-
-		//result->insert(i);
-
-		//printf("\np=%ld\n", i);
 	}
 
 	long count = 0;
@@ -52,13 +38,7 @@ std::set<long>* generatePrimeSieveEratosthenes(long upperLimit) {
 
 	printf("\nTotal primes = %ld", count);
 
-	//for (std::set<long>::iterator it = result->begin(); it != result->end(); it++) {
-	//	printf("%ld, ", *it);
-	//}
-
 	delete [] isPrime;
-
-	return 0;
 }
 
 void generatePrimeSieveSundaram(long upperLimit) {
@@ -94,17 +74,17 @@ void generatePrimeSieveSundaram(long upperLimit) {
 	}
 
 	long result = 1;
-	printf("\nPrimes: 2, ");
+	//printf("\nPrimes: 2, ");
 
 	for (long i=1; i <= n; i++) {
 
 		if (set[i])
 		{
-			printf("%ld, ", i * 2 + 1);
+			//printf("%ld, ", i * 2 + 1);
 			result++;
 		}
 	}
 
-	printf("\nPrime Count = %ld", result);
+	printf("\nTotal Primes = %ld", result);
 }
 
