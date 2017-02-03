@@ -1,5 +1,7 @@
 #include "problem1.h"
 
+#include <iostream>
+
 void problem1BruteForce() {
 
 	printf("Problem 1 - Brute Force\n");	

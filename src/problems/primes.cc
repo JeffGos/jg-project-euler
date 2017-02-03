@@ -1,5 +1,6 @@
 #include "primes.h"
 #include <cmath>
+#include <iostream>
 
 void generatePrimeSieveEratosthenes(long upperLimit) {
 
