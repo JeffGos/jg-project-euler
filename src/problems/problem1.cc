@@ -1,7 +1,7 @@
 #include "problem1.h"
 
-void problem1BruteForce()
-{
+void problem1BruteForce() {
+
 	printf("Problem 1 - Brute Force\n");	
 
 	int max = 1000;
@@ -18,14 +18,14 @@ void problem1BruteForce()
 	printf("Result = %d", result);
 }
 
-int getMultiples(int argument, int max)
-{
+int getMultiples(int argument, int max) {
+
 	int result = 0;
 	int i = 0;
 	int loops = (max - 1) / argument;
 
-	while (i < loops)
-	{
+	while (i < loops) {
+
 		int multiple = argument * (i + 1);
 
 		result += multiple;
@@ -35,8 +35,8 @@ int getMultiples(int argument, int max)
 	return result;
 }
 
-void problem1Multiples()
-{
+void problem1Multiples() {
+	
 	printf("Problem 1 - Multiples\n");	
 
 	int result = 0;
