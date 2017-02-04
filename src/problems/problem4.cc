@@ -10,7 +10,6 @@ void problem4BruteForce(short digitCount) {
 
 	int palindromeDigitCount = digitCount * 2;
 	
-	int upperLimit = pow(10, digitCount);
 	
 }
 

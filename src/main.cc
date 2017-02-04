@@ -4,6 +4,7 @@
 #include "./problems/problem1.h"
 #include "./problems/problem2.h"
 #include "./problems/problem3.h"
+#include "./problems/problem4.h"
 #include "./problems/primes.h"
 
 using namespace std;
@@ -34,6 +35,10 @@ int main () {
 
 	start = clock();
 	problem3BruteForce(600851475143);
+	printDuration(start);
+
+	start = clock();
+	problem4BruteForce(2);
 	printDuration(start);
 
 	printf("===========================\n\n");
