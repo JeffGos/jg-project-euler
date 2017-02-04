@@ -10,7 +10,7 @@ using namespace std;
 
 void printDuration(clock_t start) {
 
-	printf(" [duration = %f seconds]\n\n", ((double) (clock() - start)) / CLOCKS_PER_SEC);
+	printf(" [%f seconds]\n\n", ((double) (clock() - start)) / CLOCKS_PER_SEC);
 }
 
 int main () {
