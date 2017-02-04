@@ -4,7 +4,7 @@
 
 void problem1BruteForce(long upperLimit) {
 
-	printf("Problem 1 - Brute Force\n");	
+	printf("Problem 1 - Brute Force\n");
 
 	int multiplesOf3And5Count = 0;
 
@@ -16,7 +16,7 @@ void problem1BruteForce(long upperLimit) {
 		}
 	}
 
-	printf("Result = %d", multiplesOf3And5Count);
+	printf("Multiples of 3 and 5 below %ld = %d", upperLimit, multiplesOf3And5Count);
 }
 
 int getMultiples(int argument, int upperLimit) {
@@ -32,7 +32,7 @@ int getMultiples(int argument, int upperLimit) {
 		multiplesCount += multiple;
 		i++;
 	}	
-	
+
 	return multiplesCount;
 }
 
@@ -46,6 +46,6 @@ void problem1Multiples(long upperLimit) {
 	multiplesOf3And5Count += getMultiples(5, upperLimit);
 	multiplesOf3And5Count -= getMultiples(15, upperLimit);
 
-	printf("Result = %d", multiplesOf3And5Count);	
+	printf("Multiples below 3 and 5 below %ld = %d",  upperLimit, multiplesOf3And5Count);	
 }
 

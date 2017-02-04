@@ -8,7 +8,7 @@ void problem3BruteForce(long argument) {
 
 	printf("Problem 3 - Brute Force\n");
 
-	printf("Prime Factors below sqrt: [");
+	printf("Prime Factors below sqrt(%ld): [", argument);
 
 	long factor = argument;
 	long highestFactor = 1;

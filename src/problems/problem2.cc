@@ -24,7 +24,7 @@ void problem2BruteForce(long upperLimit) {
 	}
 
 
-	printf("Result = %d", result);
+	printf("Sum of Fibonnaci Numbers below %ld = %d", upperLimit, result);
 }
 
 

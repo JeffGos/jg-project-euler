@@ -17,9 +17,8 @@ int main () {
 
 	clock_t start;
 
-	printf("\nPROJECT EULER SOLUTIONS\n");
-
 	printf("===========================\n\n");
+	printf("PROJECT EULER SOLUTIONS\n\n");
 
 	start = clock();
 	problem1BruteForce(1000);
@@ -37,6 +36,10 @@ int main () {
 	problem3BruteForce(600851475143);
 	printDuration(start);
 
+	printf("===========================\n\n");
+
+	printf("PLAYING WITH PRIMES\n\n");
+
 	start = clock();
 	generatePrimeSieveEratosthenes(1000000);
 	printDuration(start);
@@ -45,8 +48,7 @@ int main () {
 	generatePrimeSieveSundaram(1000000);
 	printDuration(start);
 
-
-	printf("===========================\n\n");
+	printf("\n===========================\n\n");
 
 	return 0;
 }
