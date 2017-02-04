@@ -22,19 +22,19 @@ int main () {
 	printf("===========================\n\n");
 
 	start = clock();
-	problem1BruteForce();
+	problem1BruteForce(1000);
 	printDuration(start);
 
 	start = clock();
-	problem1Multiples();
+	problem1Multiples(1000);
 	printDuration(start);
 
 	start = clock();
-	problem2BruteForce();
+	problem2BruteForce(4000000);
 	printDuration(start);
 
 	start = clock();
-	problem3BruteForce();
+	problem3BruteForce(600851475143);
 	printDuration(start);
 
 	start = clock();
