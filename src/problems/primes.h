@@ -1,8 +1,7 @@
 #ifndef PRIMES_H
 #define PRIMES_H
 
-#include <iostream>
-#include <set>
+bool isPrime(long argument);
 
 //Sieve of Eratosthenes (300 BC)
 void generatePrimeSieveEratosthenes(long upperLimit);

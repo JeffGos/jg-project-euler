@@ -2,6 +2,25 @@
 #include <cmath>
 #include <iostream>
 
+bool isPrime(long argument)
+{
+	long factor = argument;
+	long highestFactor = 1;
+
+	while (factor % 2 == 0) {
+		return false;
+	}
+
+	for (long divisor = 3; divisor < sqrt(argument) ; divisor+=2) {
+
+		while (factor % divisor == 0) {
+			return false;
+		}
+	}
+
+	return true;
+}
+
 void generatePrimeSieveEratosthenes(long upperLimit) {
 
 	printf("Generate Eratosthenes Prime Sieve. Limit = %ld\n", upperLimit);	
