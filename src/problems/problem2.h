@@ -3,4 +3,6 @@
 
 void problem2BruteForce(long upperLimit);
 
+void problem2SelectiveAddition(long upperLimit);
+
 #endif

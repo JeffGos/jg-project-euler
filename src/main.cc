@@ -30,7 +30,11 @@ int main () {
 	printDuration(start);
 
 	start = clock();
-	problem2BruteForce(4000000);
+	problem2BruteForce(400000000);
+	printDuration(start);
+
+	start = clock();
+	problem2SelectiveAddition(400000000);
 	printDuration(start);
 
 	start = clock();

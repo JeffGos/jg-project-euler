@@ -10,22 +10,22 @@ void problem3BruteForce(long argument) {
 
 	printf("Prime Factors below sqrt(%ld): [", argument);
 
-	long factor = argument;
+	long quotient = argument;
 	long highestFactor = 1;
 
-	while (factor % 2 == 0) {
+	while (quotient % 2 == 0) {
 
 		highestFactor = 2;
-		factor /= 2;
+		quotient /= 2;
 		printf("2 ");
 	}
 
 	for (long divisor = 3; divisor < sqrt(argument) ; divisor+=2) {
 
-		while (factor % divisor == 0) {
+		while (quotient % divisor == 0) {
 
 			highestFactor = divisor;
-			factor /= divisor;
+			quotient /= divisor;
 			printf("%ld ", divisor);
 		}
 	}
@@ -34,8 +34,9 @@ void problem3BruteForce(long argument) {
 
 	long highestFactor2 = argument / highestFactor;
 
-	if (isPrime(highestFactor2)) {
-		highestFactor = fmax(highestFactor, argument / highestFactor);
+	if (highestFactor2 > highestFactor && isPrime(highestFactor2)) {
+
+		highestFactor = highestFactor2;
 	}
 
 	printf("Highest prime factor of %ld = %ld", argument, highestFactor);
