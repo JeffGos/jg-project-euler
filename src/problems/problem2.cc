@@ -23,7 +23,6 @@ void problem2BruteForce(long upperLimit) {
 		num2 = sum;
 	}
 
-
 	printf("Sum of Fibonnaci Numbers below %ld = %d", upperLimit, result);
 }
 
@@ -54,7 +53,6 @@ void problem2SelectiveAddition(long upperLimit) {
 		num1 = num2;
 		num2 = sum;
 	}
-
 
 	printf("Sum of Fibonnaci Numbers below %ld = %d", upperLimit, result);
 }

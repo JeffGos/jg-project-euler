@@ -4,16 +4,16 @@
 
 bool isPrime(long argument)
 {
-	long factor = argument;
+	long quotient = argument;
 	long highestFactor = 1;
 
-	while (factor % 2 == 0) {
+	if (quotient % 2 == 0) {
 		return false;
 	}
 
-	for (long divisor = 3; divisor < sqrt(argument) ; divisor+=2) {
+	for (long divisor = 3; divisor < sqrt(argument) ; divisor += 2) {
 
-		while (factor % divisor == 0) {
+		if (quotient % divisor == 0) {
 			return false;
 		}
 	}
