@@ -33,3 +33,6 @@
 *.su
 .depend
 jg-project-euler
+
+build
+.vscode
