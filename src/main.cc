@@ -7,6 +7,8 @@
 #include "./problems/problem4.h"
 #include "./problems/primes.h"
 
+#include "./other/3nplus1.h"
+
 using namespace std;
 
 void printDuration(clock_t start) {
@@ -55,6 +57,14 @@ int main () {
 
 	start = clock();
 	generatePrimeSieveSundaram(1000000);
+	printDuration(start);
+
+	printf("\n===========================\n\n");
+
+	printf("OTHER PROBLEMS\n\n");
+
+	start = clock();
+	threeNPlusOne(1, 100000);
 	printDuration(start);
 
 	printf("\n===========================\n\n");

@@ -46,6 +46,6 @@ void problem1Multiples(long upperLimit) {
 	multiplesOf3And5Count += getMultiples(5, upperLimit);
 	multiplesOf3And5Count -= getMultiples(15, upperLimit);
 
-	printf("Multiples below 3 and 5 below %ld = %d",  upperLimit, multiplesOf3And5Count);	
+	printf("Multiples of 3 and 5 below %ld = %d",  upperLimit, multiplesOf3And5Count);	
 }
 
