@@ -1,6 +1,7 @@
 #include "problem4.h"
 
 #include <iostream>
+#include <math.h>
 
 bool isPalindrome(int number) {
 
@@ -35,7 +36,7 @@ void problem4CheckPalindromes(short digitCount) {
 	
 	int upperLimit = pow(10, digitCount);
 
-	int* palindromeDigitsArray = int [palindromeDigitCount]
+	int* palindromeDigitsArray = new int [palindromeDigitCount];
 
 	for (int i = 0; i < palindromeDigitCount; i++) {
 		
@@ -56,7 +57,7 @@ void problem4CheckPalindromes(short digitCount) {
 
 		for (int i = 0; i < palindromeDigitCount; i++) {
 
-			palindrome += palindromeDigitsArray
+			//palindrome += palindromeDigitsArray
 		}
 	}
 }
